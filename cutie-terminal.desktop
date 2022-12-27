@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.2
+Type=Application
+Name=Terminal
+Exec=/usr/bin/cutie-terminal
+TryExec=/usr/bin/cutie-terminal
+Icon=cutie-terminal
+Terminal=false
+StartupNotify=false
