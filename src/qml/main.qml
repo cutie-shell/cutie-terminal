@@ -1,9 +1,9 @@
-import Cutie 1.0
-import CutieTerminal 1.0
-import QtQuick 2.15
-import QtQuick.Controls 2.15
-import QtGraphicalEffects 1.15
-import QMLTermWidget 1.0
+import Cutie
+import CutieTerminal
+import QtQuick
+import QtQuick.Controls
+import Qt5Compat.GraphicalEffects
+import QMLTermWidget
 
 CutieWindow {
 	id: mainWindow
