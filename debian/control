@@ -16,5 +16,5 @@ Package: cutie-terminal
 Architecture: any
 Multi-Arch: foreign
 Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends}, ${shlibs:Depends}, qml-module-cutie, qml6-module-termwidget
+Depends: ${misc:Depends}, ${shlibs:Depends}, qml6-module-cutie, qml6-module-termwidget
 Description: This package contains Cutie Terminal app.
