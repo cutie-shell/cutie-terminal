@@ -8,3 +8,5 @@ TryExec=/usr/bin/cutie-terminal
 Icon=cutie-terminal
 Terminal=false
 StartupNotify=false
+Comment=Command Line
+Categories=TerminalEmulator;System
