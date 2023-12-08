@@ -8,15 +8,10 @@ find_package(Qt6 REQUIRED COMPONENTS Core Widgets Quick Qml)
 
 qt_standard_project_setup()
 
-set(cutie-terminal_SOURCES 
-        src/main.cpp
-        src/util.cpp
-        src/util.h
-)
+set(cutie-terminal_SOURCES src/main.cpp)
 
 qt_add_resources(APP_RESOURCES 
-	${CMAKE_SOURCE_DIR}/src/qml/qml.qrc
-	${CMAKE_SOURCE_DIR}/icons/icons.qrc)
+	${CMAKE_SOURCE_DIR}/src/qml/qml.qrc)
 
 qt_add_executable(cutie-terminal ${cutie-terminal_SOURCES} ${APP_RESOURCES})
 
