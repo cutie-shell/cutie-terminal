@@ -11,8 +11,8 @@ CutieWindow {
 	visible: true
 	title: qsTr("Terminal")
 
-	onActiveChanged: {
-		modifierHolder.forceActiveFocus();
+	Component.onCompleted: {
+		terminal.forceActiveFocus();
 		Qt.inputMethod.show();
 	}
 
@@ -24,7 +24,6 @@ CutieWindow {
 			id: terminal
 			anchors.fill: parent
 			anchors.margins: 15
-			anchors.bottomMargin: modKeyArea.height + 15
 			font.family: "Monospace"
 			font.pointSize: 9
 
@@ -35,13 +34,13 @@ CutieWindow {
 
 			Component.onCompleted: {
 				mainsession.startShellProgram();
-				setForegroundColor((Atmosphere.variant == "dark") ? "#ffffff" : "#000000");
+				setForegroundColor(Atmosphere.textColor);
 			}
 
 			Connections {
 				target: Atmosphere
 				onVariantChanged: {
-					terminal.setForegroundColor((Atmosphere.variant == "dark") ? "#ffffff" : "#000000");
+					terminal.setForegroundColor(Atmosphere.textColor);
 				}
 			}
 
