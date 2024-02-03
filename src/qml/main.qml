@@ -25,7 +25,7 @@ CutieWindow {
 			anchors.fill: parent
 			anchors.margins: 15
 			font.family: "Monospace"
-			font.pointSize: 9
+	        font.pointSize: 11
 
 			session: QMLTermSession{
 				id: mainsession
